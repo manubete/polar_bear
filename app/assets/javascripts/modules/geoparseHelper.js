@@ -24,7 +24,7 @@ var geoparseHelper = (function(){
   var _distanceFromRoom = function(roomObject){
       var distanceInMiles = geoHelper.calculateDistance(userFactory.getUserValue("userLatitude"), userFactory.getUserValue("userLongitude"), roomObject["roomLatitude"], roomObject["roomLongitude"])
 
-      var distanceInFeet = distanceInMiles / 5280
+      var distanceInFeet = distanceInMiles / 5282
 
       distanceInFeet = distanceInFeet + ''
       distanceInFeet = distanceInFeet.substring(0,3) + ' feet'
